@@ -2,8 +2,6 @@ import tkinter as tk
 from tkinter import messagebox
 
 
-
-
 def controlla_credenziali():
     username = username_entry.get()
     password = password_entry.get()
@@ -27,11 +25,11 @@ root.title("Gestione Credenziali di Accesso")
 label_username = tk.Label(root, text="Username:")
 label_password = tk.Label(root, text="Password:")
 username_entry = tk.Entry(root)
-password_entry = tk.Entry(root, show="*")  # per nascondere la password
+password_entry = tk.Entry(root, show="*")
 
 # Posizionamento dei widget
-label_username.grid(row=0, column=0, sticky="e")
-label_password.grid(row=1, column=0, sticky="e")
+label_username.grid(row=0, column=0)
+label_password.grid(row=1, column=0)
 username_entry.grid(row=0, column=1)
 password_entry.grid(row=1, column=1)
 

@@ -50,9 +50,10 @@ class GaraGUI:
                 break
 
             else:
-                self.log_text.insert(tk.END, f"\nIl motore è al {statoMotore}%\n")
+                self.log_text.insert(tk.END, f"Il motore è al {statoMotore}%\n")
 
-            self.log_text.insert(tk.END, f"il telaio è al {statoTelaioPosteriore}%\n\n")
+            self.log_text.insert(tk.END, f"Il telaio posteriore è al {statoTelaioPosteriore}%")
+            self.log_text.insert(tk.END, f"\nIl numero di ali rimanenti è {alaNuova}\n\n")
             self.log_text.insert(tk.END, f"La gara è al {secondo}%\n")
             self.log_text.update()
             time.sleep(1)
@@ -65,3 +66,4 @@ class GaraGUI:
 
 root = tk.Tk()
 app = GaraGUI(root)
+
